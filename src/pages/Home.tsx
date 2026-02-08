@@ -1,6 +1,8 @@
 import Header from "../components/Header"
 import Introduction from "../components/Introduction"
+import MoreInformations from "../components/MoreInformations"
 import Products from "../components/Products"
+import Services from "../components/Services"
 
 export default function Home() {
     return (
@@ -8,6 +10,8 @@ export default function Home() {
             <Header/>
             <Introduction/>
             <Products/>
+            <Services/>
+            <MoreInformations/>
         </div>
     )
 }

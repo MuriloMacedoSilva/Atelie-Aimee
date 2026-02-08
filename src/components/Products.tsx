@@ -35,11 +35,11 @@ export default function Products() {
             <h2 className="font-Instrument text-5xl text-black block text-center w-full mb-10">Produtos em Destaque</h2>
             <div className="flex flex-col md:flex-row w-full justify-around gap-2.5 items-center">
                 {   products.map((productItem) => (
-                        <div key={productItem.id} className="md:w-[28%] h-[530px] 2xl:h-[900px] flex flex-col items-center gap-3">
+                        <div key={productItem.id} className="md:w-[28%] h-132.5 2xl:h-225 flex flex-col items-center gap-3">
                             <div className=" rounded-full h-full md:w-full w-[80%] flex items-center justify-center overflow-hidden">
-                                <img src={productItem.image} alt="imagem do produto" className="w-full " />
+                                <img src={productItem.image} alt={productItem.name} className="w-full " />
                             </div>
-                            <h3 className="text-justify w-full text-start text-[14px] font-Instrument not-italic font-semibold text-[18px]">
+                            <h3 className="text-justify w-full text-[18px] font-Instrument not-italic font-semibold h-15">
                                 {productItem.name}
                             </h3>
                             <h3 className="font-Instrument text-[23px] w-full text-gray-900">
