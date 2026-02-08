@@ -17,7 +17,7 @@ import { Pagination, EffectFade, Autoplay } from 'swiper/modules';
 
 export default function MoreInformations() {
     return (
-        <div className="w-full flex flex-row mt-50 md:h-200 2xl:h-">
+        <div className="w-full flex md:flex-row flex-col mt-50 md:h-200 h-300 2xl:h-250">
             <Swiper
             spaceBetween={50}
             slidesPerView={1}
@@ -27,7 +27,7 @@ export default function MoreInformations() {
             delay: 4650
             }}
             modules={[Pagination, EffectFade, Autoplay]}
-            className="w-[50%] h-full"
+            className="md:w-[50%] w-full h-full"
             >
                 <SwiperSlide className="w-full h-full">
                     <img src={logo_quadrada_rosa} alt="" className="w-full" />
@@ -39,7 +39,7 @@ export default function MoreInformations() {
                     <img src={aimee} alt="" className="w-full" />
                 </SwiperSlide>
             </Swiper>
-            <div className="w-[50%] h-full flex flex-col gap-7 items-baseline justify-center px-20">
+            <div className="md:w-[50%] w-full h-full flex flex-col gap-7 items-baseline justify-center md:px-20 2xl:px-30 px-7">
                 <h2 className="text-start font-Instrument text-6xl w-full">Mais Sobre Nossa Marca</h2>
                 <p className="text-start font-Instrument text-xl">Na nossa loja de vestuário, acreditamos na combinação perfeita entre qualidade superior e estilo sofisticado. Nossa equipe de especialistas se dedica a oferecer peças que refletem as últimas tendências da moda, sempre com o compromisso de atender às necessidades e expectativas dos nossos clientes.</p>
                 <a href="" target="blank" className="rounded-full bg-red-400 p-3 w-full flex items-center justify-center text-[20px] text-white font-Instrument hover:bg-red-200 transition duration-300 transform">Saiba Mais</a>
