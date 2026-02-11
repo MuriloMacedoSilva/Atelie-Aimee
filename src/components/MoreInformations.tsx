@@ -42,7 +42,7 @@ export default function MoreInformations() {
             <div className="md:w-[50%] w-full h-full flex flex-col gap-7 items-baseline justify-center md:px-20 2xl:px-30 px-7">
                 <h2 className="text-start font-Instrument text-6xl w-full">Mais Sobre Nossa Marca</h2>
                 <p className="text-start font-Instrument text-xl">Na nossa loja de vestuário, acreditamos na combinação perfeita entre qualidade superior e estilo sofisticado. Nossa equipe de especialistas se dedica a oferecer peças que refletem as últimas tendências da moda, sempre com o compromisso de atender às necessidades e expectativas dos nossos clientes.</p>
-                <a href="" target="blank" className="rounded-full bg-red-400 p-3 w-full flex items-center justify-center text-[20px] text-white font-Instrument hover:bg-red-200 transition duration-300 transform">Saiba Mais</a>
+                <a href="" target="blank" className="rounded-full bg-red-400 p-3 w-full md:w-[60%] flex items-center justify-center text-[20px] text-white font-Instrument hover:bg-red-200 transition duration-300 transform">Saiba Mais</a>
             </div>
         </div>
     )

@@ -47,7 +47,7 @@ export default function Services() {
                         <div className="gap-5 flex flex-col w-full">
                             <h4 className="font-Instrument text-2xl w-full text-start">{serviceItem.name}</h4>
                             <p className="font-Instrument text-lg w-full h-15">{serviceItem.description}</p>
-                            <a href="" target="blank" className="rounded-full bg-red-400 p-3 w-full flex items-center justify-center text-[20px] text-white font-Instrument hover:bg-red-200 transition duration-300 transform">Agendar</a>
+                            <a href="" target="blank" className="rounded-full bg-red-400 p-3 w-[90%] flex items-center justify-center text-[20px] text-white font-Instrument hover:bg-red-200 transition duration-300 transform">Agendar</a>
                         </div>
                     </div>
                 ))}
