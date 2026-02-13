@@ -8,13 +8,13 @@ export default function Footer() {
              </div>
 
              <div className="w-[40%] h-full p-5 flex flex-row gap-5">
-                <div className="">
-                    <h2>Localização</h2>
-                    <p>Lorem, ipsum dolomus adipisci, quidem itaque! Labore.</p>
+                <div className="gap-2 flex flex-col">
+                    <h2 className="font-Instrument text-4xl">Localização</h2>
+                    <p className="text-[15px]">Lorem, ipsum dolomus adipisci, quidem itaque! Labore.</p>
                 </div>
-                <div className="">
-                    <h2>Contato</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tenetur consequuntur repetur.</p>
+                <div className="gap-2 flex flex-col">
+                    <h2 className="font-Instrument text-4xl">Contato</h2>
+                    <p className="text-[15px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tenetur consequuntur repetur.</p>
                 </div>
              </div>
         </footer>
