@@ -17,14 +17,13 @@ const createUserFormSchema = z.object({
         .transform(name => {
             return name.trim().split("  ").map(word =>  {
                 return word[0].toLocaleUpperCase().concat(word .substring(1))
-            })
+            }).join(" ")
         }),
         email: z.string()
         .nonempty("O e-mail é obrigatório")
         .email("Formato de e-mail inválido")
         .toLowerCase(),
-        password: z.string()
-        .min(6,  "A senha precisa de no mpinimo seis caracteres" ),
+        menssagem: z.string()
     })
 
 
@@ -49,7 +48,7 @@ export default function Message() {
         <section className="flex flex-row w-full mt-46">
             <div className="w-[50%] flex flex-col gap-5">
                 <h2 className="w-[50%] font-Instrument text-6xl">Fale Conosco</h2>
-                <p className="w-[90%]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ea dicta reiciendis accusamus labore ducimus ipsum, a quo dolores, quis facere. Veniam ex optio obcaecati earum possimus amet ab corrupti?</p>
+                <p className="w-[90%] font-Instrument text-[15px]">Quer trabalhar em conjunto? Ou agendar uma  consulta? Preencha o formulário, e entraremos em contato em breve! Será um prazer falar com você.</p>
             </div>
 
             <form 
@@ -58,8 +57,9 @@ export default function Message() {
                 <div className="flex flex-col gap-1">
                     <label htmlFor="name">Nome</label>
                     <input 
-                    type="text" 
-                    className="border rounded-full shadow-sm p-2 text-black"
+                    type="text"
+                    required 
+                    className="border rounded-full shadow-sm p-2 px-3 text-black"
                     {...register("name")} />
                     {errors.name &&  <span>{errors.name.message}</span>}
                 </div>
@@ -68,18 +68,19 @@ export default function Message() {
                     <label htmlFor="email">E-mail</label>
                     <input 
                     type="email" 
-                    className="border rounded-full shadow-sm p-2 text-black"
+                    required
+                    className="border rounded-full shadow-sm p-2 px-3 text-black"
                     {...register("email")} />
                     {errors.email &&  <span>{errors.email.message}</span>}
                 </div>
                 
                 <div className="flex flex-col gap-1">
-                    <label htmlFor="password">Senha</label>
-                    <input 
-                    type="password"
-                    className="border rounded-full shadow-sm  p-2 text-black"
-                    {...register("password")} />
-                    {errors.password &&  <span>{errors.password.message}</span>}
+                    <label htmlFor="menssagem">Menssagem</label>
+                    <textarea
+                    required
+                    className="border shadow-sm  p-2 text-black"
+                    {...register("menssagem")} />
+                    {errors.menssagem &&  <span>{errors.menssagem.message}</span>}
                 </div>
 
                 <button 
