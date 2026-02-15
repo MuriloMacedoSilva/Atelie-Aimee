@@ -7,7 +7,7 @@ export default function Social() {
     return(
         <div className="flex-col w-full flex items-center justify-center mt-37 gap-22">
             <h2 className="font-Instrument text-5xl">Siga-nos nas Redes Sociais</h2>
-            <div  className="flex flex-row gap-10 w-full px-20 items-center justify-center">
+            <div  className="flex flex-col md:flex-row gap-10 w-full px-20 items-center justify-center">
                 <SocialIcon url="https://www.whatsapp.com/" />
                 <SocialIcon url="https://www.instagram.com/" />
                 <SocialIcon url="https://www.tiktok.com/" />

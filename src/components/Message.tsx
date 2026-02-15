@@ -45,14 +45,14 @@ export default function Message() {
     // high-order function
 
     return(
-        <section className="flex flex-row w-full mt-46">
-            <div className="w-[50%] flex flex-col gap-5">
+        <section className="flex md:flex-row flex-col items-center justify-center gap-7 w-full mt-46">
+            <div className="md:w-[50%] w-full flex flex-col gap-5">
                 <h2 className="w-[50%] font-Instrument text-6xl">Fale Conosco</h2>
                 <p className="w-[90%] font-Instrument text-[15px]">Quer trabalhar em conjunto? Ou agendar uma  consulta? Preencha o formulário, e entraremos em contato em breve! Será um prazer falar com você.</p>
             </div>
 
             <form 
-            className="w-[50%] flex flex-col gap-4 border rounded-2xl p-5 font-Instrument"
+            className="md:w-[50%] w-full flex flex-col gap-4 border rounded-2xl p-5 font-Instrument"
             onSubmit={handleSubmit(createUser)}>
                 <div className="flex flex-col gap-1">
                     <label htmlFor="name">Nome</label>
